@@ -6,6 +6,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import io.getarrays.userservice.entity.Role;
 import io.getarrays.userservice.entity.User;
@@ -41,5 +43,8 @@ public class UserserviceApplication {
 			userService.addRoleToUser("Rasagna", "ROLE_USER");
 		};
 	}
+	
+	
+	
 
 }
